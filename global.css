@@ -2,9 +2,17 @@
 	font-family:'Robobto',sans-serif;
 	color:white;
 	font-size:15px;
+	letter-spacing: 1px;
 }
 body{
-	background-color:#1e1c23;
+	background-color:#333333;
+	background-attachment:scroll;
+	background-size:100%;
+	background-position:center;
+	margin:0px;
+}
+p{
+	text-align: justify
 }
 a{
 	text-decoration: none;
@@ -13,7 +21,8 @@ a{
 	text-align: center;
 	margin:0px;
 	padding:30px;
-	background-color:rgba(0,0,0,.85);
+	background-color:black;
+	border:1px solid #1c1c1c;
 }
 .navlist ul{
 	display:inline-block;
@@ -51,13 +60,17 @@ h3{
 	margin:0px;
 	padding:10px;
 	text-align: center;
+	font-family:'Raleway',sans-serif;
+	letter-spacing: 1px;
 }
 .landing{
 	text-align: center;
 	padding:0px 0px 70px;
-	background: linear-gradient(black, rgba(0,0,0,0));
+	background: linear-gradient(black, rgba(0,0,0,0) 100%);
 }
-
+.landing > p{
+	text-align: center;
+}
 i
 	{
 	font-size: 70px;
@@ -88,9 +101,9 @@ section{
 }
 .svg{
 	height:auto;
-	width:250px;
+	width:225px;
 	float:left;
-	padding:20px;
+	padding:40px;
 	display:block;
 }
 .info{
@@ -111,6 +124,8 @@ section{
 	border-radius:20px;
 	padding: 10px;
 	font-size: 25px;
+	font-family:'Raleway',sans-serif;
+	letter-spacing: 3px;
 }
 .button:hover{
 	color:white;
