@@ -2,6 +2,8 @@
 	font-family: 'Robobto', sans-serif;
 	color: white;
 	font-size: 15px;
+	padding:0;
+	margin:0px;
 }
 
 body {
@@ -9,12 +11,12 @@ body {
 	background-attachment: scroll;
 	background-size: 100%;
 	background-position: center;
-	margin: 0px;
 	background-image: url(img/pic1.png);
 }
 
 p {
-	text-align: justify
+	text-align: justify;
+	margin: 10px;
 }
 
 a {
@@ -51,11 +53,9 @@ footer p {
 	list-style: none;
 }
 
-.nav .navlist li {
+.nav .navlist>li {
 	display: inline-block;
 	vertical-align: top;
-	padding: 0px 0px;
-	margin: 0px;
 	padding: 0px 60px;
 }
 
@@ -69,24 +69,30 @@ footer p {
 
 .nav .navlist .sublist {
 	display: none;
-}
-
-.nav .navlist li:hover .sublist {
-	display: block;
-	margin: 0px;
-	padding: 0px;
 	background-color: #0f0f0f;
 	border-radius: 5px;
 	border: 1px solid #191919;
+	position: absolute;
+	max-width: 140px;
+	z-index: 100;
+}
+
+
+.nav .navlist li:hover .sublist {
+	display: block;
+
 }
 
 .nav .navlist li:hover .sublist li {
 	display: inline;
-	padding: 0px;
 }
 
 .nav .navlist li .sublist li a:hover {
 	color: #f7b267;
+}
+
+.dropbtn {
+	border: 1px solid #191919;
 }
 
 h1,
@@ -101,21 +107,18 @@ h3 {
 
 h1 {
 	font-size: 80px;
-	margin: 0px;
 	padding: 40px 0px 0px 0px;
 }
 
 h2 {
 	font-size: 25px;
 	letter-spacing: 3px;
-	margin: 0px;
 	padding: 0px 0px 60px;
 }
 
 h3 {
 	color: #e15554;
 	font-size: 40px;
-	margin: 0px;
 	padding: 10px;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -135,12 +138,12 @@ h3 {
 }
 
 i {
-	font-size: 70px;
-	letter-spacing: 30px;
+	font-size: 100px;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
 	transform-origin: center;
+	margin:0px 40px;
 }
 
 @keyframes iconflip {
@@ -158,6 +161,9 @@ i:hover {
 	color: #f7b267;
 }
 
+.fas fa-map-marker-alt:hover{
+	animation:none;
+}
 section {
 	display: block;
 	padding: 10px;
@@ -179,14 +185,33 @@ section {
 	display: block;
 	float: right;
 }
-
+.contactcons {
+	margin:60px;
+}
 .infocon {
 	width: auto;
 	padding: 0px 300px;
 	margin: 50px 100px 100px;
 	background: radial-gradient(black);
 }
-
+.mapbox{
+	text-align: center;
+	margin:50 300px;
+}
+.mapbox p{
+	width:190px;
+	height:130px;
+	text-align:center;
+	padding: 40px;
+	margin: 0 auto;
+}
+.mapbox #inquiry h3{
+	color:white;
+}
+#mapstyle{
+	box-shadow: -5px 1px 8px 0 rgba(0, 0, 0, 0.2);
+	border: 1px solid #e15554;
+}
 .button {
 	color: #e15554;
 	border: 4px solid #e15554;
@@ -195,8 +220,11 @@ section {
 	font-size: 25px;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 3px;
+	transition-duration: 0.8s
 }
-
+.btncon {
+	margin:30px;
+}
 .button:hover {
 	color: white;
 	border-color: white;
@@ -206,11 +234,48 @@ section {
 .info > p {
 	padding: 0px 0px 20px;
 }
-
+.landing > a,
+.landing > p{
+	padding:20px;
+}
 .landing > a:hover {
 	color: #f7b267;
 }
 
 .landing > p {
 	text-shadow: -4px 4px 3px rgba(0, 0, 0, .60);
+}
+
+/*Form */
+
+#inquiry{
+	background-color:rgba(0,0,0,.45);
+	padding: 20px 80px;
+	border-radius:5px;
+	margin:40px 0px;
+}
+
+input,
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	color:#757575;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+textarea{
+	height:300px;
+}
+input[type=submit],
+input[type=reset],
+input[type=button]{
+	width:20%;
+	padding:12px 20px;
+}
+textarea:focus,
+input:focus {
+    border: 3px solid #e15554;
+	outline:none;
+    transition: 0.4s;
 }
