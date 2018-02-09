@@ -3,7 +3,7 @@ html { font-size: 62.5%; }
 * {
 	font-family: 'Robobto', sans-serif;
 	color: white;
-	padding:0;
+	padding:0px;
 	margin:0px;
 }
 
@@ -31,25 +31,13 @@ hr {
 	display: block;
 }
 
+/* NAVIGATION */
+
 header {
 	padding: 30px;
 	background-color: black;
 	border-bottom: 1px solid #1c1c1c;
 	text-align: center;
-}
-
-footer {
-	border-top: 1px solid #1c1c1c;
-	text-align: center;
-	padding: 40px 0px;
-	margin: 70px 0px 0px 0px;
-	box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
-	background-color: #1c1c1c;
-}
-
-footer p {
-	text-align: center;
-	color: #333;
 }
 
 .nav .navlist {
@@ -98,6 +86,8 @@ footer p {
 	border: 1px solid #191919;
 }
 
+/*HEADINGS*/
+
 h1,
 h2,
 h3 {
@@ -128,6 +118,8 @@ h3 {
 	letter-spacing: 1px;
 }
 
+/* LANDING CONTAINER */
+
 .landing {
 	text-align: center;
 	padding: 0px 0px 70px;
@@ -138,7 +130,18 @@ h3 {
 
 .landing > p {
 	text-align: center;
+	text-shadow: -4px 4px 3px rgba(0, 0, 0, .60);
+	padding:20px;
 }
+
+.landing > a{
+	padding:20px;
+}
+.landing > a:hover {
+	color: #f7b267;
+}
+
+/* ICONS */
 
 i {
 	font-size: 10rem;
@@ -163,21 +166,22 @@ i:hover {
 	animation: iconflip 1.5s infinite;
 	color: #f7b267;
 }
-#mapcon:hover{
-	animation:none;
-	color:white;
+.contactcons {
+	margin:60px;
 }
+
+/*INFO SECTIONS*/
+
 section {
 	display: block;
 	padding: 10px;
 }
-
-.svg {
+.svg{
 	height: auto;
 	width: 225px;
 	float: left;
 	padding: 40px;
-	display: block;
+	display:block;
 }
 
 .info {
@@ -188,20 +192,26 @@ section {
 	display: block;
 	float: right;
 }
-.contactcons {
-	margin:60px;
-}
+
 .infocon {
 	width: auto;
 	padding: 20px;
 	margin: 50px 20% 100px;
 	background: radial-gradient(black);
 }
+.info > p {
+	padding: 0px 0px 20px;
+}
+
 /* MAP */
 
+#mapcon:hover{
+	animation:none;
+	color:white;
+}
 .mapbox{
 	text-align: center;
-	margin:100px 23%;
+	margin:100px 22%;
 }
 .mapbox p{
 	width:190px;
@@ -217,6 +227,7 @@ section {
 	box-shadow: -8px 7px 15px 0 rgba(0, 0, 0, 0.4);
 	border: 1px solid #e15554;
 }
+/* SITE BUTTONS */
 
 .button {
 	color: #e15554;
@@ -235,21 +246,6 @@ section {
 	color: white;
 	border-color: white;
 	box-shadow: 0px 0px 12px 5px #e15554;
-}
-
-.info > p {
-	padding: 0px 0px 20px;
-}
-.landing > a,
-.landing > p{
-	padding:20px;
-}
-.landing > a:hover {
-	color: #f7b267;
-}
-
-.landing > p {
-	text-shadow: -4px 4px 3px rgba(0, 0, 0, .60);
 }
 
 /*Inquiry Form */
@@ -303,4 +299,20 @@ input[type=email]:focus {
     border-left: 3px solid #e15554;
 	outline:none;
     transition: 0.4s;
+}
+
+/* FOOTER */
+
+footer {
+	border-top: 1px solid #1c1c1c;
+	text-align: center;
+	padding: 40px 0px;
+	margin: 70px 0px 0px 0px;
+	box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
+	background-color: #1c1c1c;
+}
+
+footer p {
+	text-align: center;
+	color: #333;
 }
