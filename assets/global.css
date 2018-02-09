@@ -1,7 +1,8 @@
+html { font-size: 62.5%; }
+
 * {
 	font-family: 'Robobto', sans-serif;
 	color: white;
-	font-size: 15px;
 	padding:0;
 	margin:0px;
 }
@@ -17,10 +18,12 @@ body {
 p {
 	text-align: justify;
 	margin: 10px;
+	font-size:1.5rem;
 }
 
 a {
 	text-decoration: none;
+	font-size:1.5rem;
 }
 
 hr {
@@ -106,19 +109,19 @@ h3 {
 }
 
 h1 {
-	font-size: 80px;
+	font-size: 8rem;
 	padding: 40px 0px 0px 0px;
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 2.5rem;
 	letter-spacing: 3px;
 	padding: 0px 0px 60px;
 }
 
 h3 {
 	color: #e15554;
-	font-size: 40px;
+	font-size: 4rem;
 	padding: 10px;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
@@ -138,7 +141,7 @@ h3 {
 }
 
 i {
-	font-size: 100px;
+	font-size: 10rem;
 	text-align: center;
 	display: inline-block;
 	text-decoration: none;
@@ -190,21 +193,21 @@ section {
 }
 .infocon {
 	width: auto;
-	padding: 0px 300px;
-	margin: 50px 100px 100px;
+	padding: 20px;
+	margin: 50px 20% 100px;
 	background: radial-gradient(black);
 }
 /* MAP */
 
 .mapbox{
 	text-align: center;
-	margin:50 300px;
+	margin:100px 23%;
 }
 .mapbox p{
 	width:190px;
 	height:130px;
 	text-align:center;
-	padding: 40px;
+	padding: 40px 0px;
 	margin: 0 auto;
 }
 .mapbox #inquiry h3{
@@ -220,7 +223,7 @@ section {
 	border: 4px solid #e15554;
 	border-radius: 20px;
 	padding: 10px;
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 3px;
 	transition-duration: 0.8s
@@ -249,13 +252,16 @@ section {
 	text-shadow: -4px 4px 3px rgba(0, 0, 0, .60);
 }
 
-/*Form */
+/*Inquiry Form */
 
 #inquiry{
 	background-color:rgba(0,0,0,.45);
 	padding: 20px 80px;
 	border-radius:10px;
 	margin:40px 0px;
+}
+#inquiry h3{
+	font-family:'Raleway',sans-serif;
 }
 input,
 textarea{
@@ -264,7 +270,7 @@ textarea{
     margin: 8px 0;
     box-sizing: border-box;
 	color:#757575;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	font-size:1.5rem;
 }
 textarea{
 	height:300px;
@@ -274,10 +280,27 @@ input[type=reset],
 input[type=button]{
 	width:20%;
 	padding:12px 20px;
+	margin:12px;
+	background-color:#1c1c1c;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border: 0.5px solid #2d2d2d;
+	border-radius:5px;
+	font-family: 'Raleway',sans-serif;
+}
+input[type=submit]:hover,
+input[type=reset]:hover,
+input[type=button]:hover{
+	transition:0.4s;
+	box-shadow: 0px 0px 12px white;
+	height:auto;
 }
 textarea:focus,
-input:focus {
-    border: 3px solid #e15554;
+input[type=text]:focus,
+input[type=tel]:focus ,
+input[type=email]:focus {
+    border-left: 3px solid #e15554;
 	outline:none;
     transition: 0.4s;
 }
