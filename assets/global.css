@@ -149,6 +149,43 @@ h3 {
 	padding: 20px;
 }
 
+#htmltext,
+#csstext,
+#jstext,
+#phptext,
+#resptext{
+	display:none;
+	font-size: 3rem;
+	color: #f7b267;
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+.fa-html5:hover ~ #htmltext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+.fa-css3-alt:hover ~ #csstext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+.fa-js-square:hover ~ #jstext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+
+.fa-php:hover ~ #phptext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+.icon-mobile-device:hover ~ #resptext{
+	display:block;
+	animation: fadeIn 2s 1;
+}
+
 .landing > a {
 	padding: 20px;
 }
