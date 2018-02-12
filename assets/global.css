@@ -349,11 +349,33 @@ footer {
 	margin: 70px 0px 0px 0px;
 	box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2);
 	background-color: #1c1c1c;
+	position:relative;
+	text-align: center;
 }
 
-footer p {
-	text-align: center;
-	color: #333;
+.copyright{
+	display:inline-block;
+}
+
+.copyright p{
+		color: #444;
+}
+.footcons {
+	float:left;
+	position:absolute;
+	display:block;
+	top: 45px;
+	margin:0 0 0 70px;
+}
+
+.footcons i{
+	font-size: 3rem;
+	margin:0 30px;
+	color:#444;
+}
+.footcons i:hover{
+	text-shadow:none;
+	animation:none;
 }
 
 /* SCROLLBAR */
